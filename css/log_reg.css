@@ -1,0 +1,144 @@
+/* general */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    background: #fff;
+    color: #a5a5a5;
+}
+
+
+
+/********** Registration & Login Containers **********/
+.register_form,
+.login_form {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/********** Forms **********/
+.register_form form,
+.login_form form {
+    background: #212529;
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 165px;
+    margin-bottom: 50px;
+}
+
+/********** Inputs **********/
+.register_form input,
+.login_form input {
+    background: transparent;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.register_form input:focus,
+.login_form input:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+    background: transparent;
+    color: #fff;
+}
+
+/********** Placeholders **********/
+.register_form input::placeholder,
+.login_form input::placeholder {
+    color: #aaa;
+    opacity: 0.8;
+}
+
+/********** Buttons **********/
+.register_form button,
+.login_form button {
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.register_form button:hover,
+.login_form button:hover {
+    transform: translateY(-2px);
+}
+
+/********** Links **********/
+.register_form a,
+.login_form a {
+    color: #0d6efd;
+    transition: color 0.3s;
+}
+
+.register_form a:hover,
+.login_form a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+.my-fixed-btn {
+    width: 100px !important;
+}
+.back_to_home {
+    padding: 12px 25px;
+    background-color: #0a58ca;
+    color: #a5a5a5;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+
+/******************** Responsive ********************/
+@media screen and (max-width: 1220px){
+    .col-lg-10{
+        max-width: 100% !important;
+    }
+}
+@media screen and (max-width: 1007px){
+    .col{
+        padding: 0px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .row{
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .register_form form,
+    .login_form form {
+        padding: 30px 20px;
+        max-width: 100%;
+    }
+
+    .register_form h2,
+    .login_form h2 {
+        font-size: 24px;
+    }
+    .about_text_col {
+        padding: 30px 20px;
+    }
+
+    .about_text_content h2 {
+        font-size: 28px;
+    }
+
+    .about_text_content p {
+        font-size: 16px;
+    }
+}
